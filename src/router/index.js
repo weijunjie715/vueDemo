@@ -4,6 +4,8 @@ import IndexPage from '@/components/IndexPage'
 import ErrorPage from '@/components/ErrorPage'
 import LoginPage from '@/components/LoginPage'
 import elementPage from '@/components/element/elementPage'
+import elIndexPage from '@/components/element/indexPage'
+import siderbar from '@/components/element/siderbar'
 
 
 
@@ -29,7 +31,18 @@ const router = new Router({
       path: '/elementPage',
       name: 'elementPage',
       component: elementPage
+    },{
+      //设置全路径404  路由中没有配置的路径都走404路由
+      path: '/elIndexPage',
+      name: 'elIndexPage',
+      component: elIndexPage
+    },{
+      //设置全路径404  路由中没有配置的路径都走404路由
+      path: '/siderbar',
+      name: 'siderbar',
+      component: siderbar
     }
+
   ],
   mode:'history'
 });
